@@ -284,14 +284,12 @@ h5{
 }
 .about__item-subtitle{
     font-family: "Raleway", sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;  
 }
 .pricing{
     padding: 50px 0;
-    margin: 0 auto;
     height: 900px;
     background: #F5F5F5
     }
@@ -378,4 +376,82 @@ h5{
     left: 170px;
     background: #333333;
     border: 2px solid #F5F5F5;
+}
+.reviews{
+    padding:0 50px;
+}
+.reviews__wrapper{
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1170px;
+}
+.reviews__title{
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    color: #000000;
+}
+.reviews__separator{
+    margin: 50px auto;
+}
+.customer{
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 83px; 
+}
+.reviews__customer{
+    padding:0 10px;
+}
+.customer__comment{
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #86878B;
+    width: 370px;
+    background: #E2E2E2;
+    border-radius: 10px;
+    position: relative;
+    padding-top: 38px;
+    padding-bottom: 37px;
+}
+.customer__comment::before{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    margin-top: 146px;
+    left: 70px;
+    background: #E2E2E2;
+    transform: rotate(90deg);
+    border-style: solid;
+    border-width: 10px;
+    border-color: #ffffff #ffffff #ffffff #e2e2e2;
+}
+
+.customer__img{
+    width: 70px;
+    height: 70px;
+    background: url(.png);
+    margin-top: 66px;
+    float: left;
+}
+.customer__name{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    color: #000000;
+    margin-top: 66px;
+
+}
+.customer__job{
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    width: 270px;
 }
