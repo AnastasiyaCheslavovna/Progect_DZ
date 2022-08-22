@@ -692,15 +692,22 @@ h5{
     line-height: 21px;
     color: #86878B;
     margin-top: 40px;
+    padding-bottom: 89px
+}
+form{
+    display: block;
+    width: 50%;
+    margin-right: 20px;
+    float: left;
+    max-width: 571px;
 }
 input{
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
     line-height: 19px;
-    display: flex;
     align-items: center;
+    display: flex;
     color: #BDBDBD;
-    width: 571px;
     height: 38px;
     border-bottom: 1px solid #BDBDBD;
 }
@@ -709,7 +716,10 @@ textarea{
     font-size: 14px;
     line-height: 19px; 
     color: #BDBDBD;
-    float: right;
+    float: left;
+    width: calc(50% - 20px);
+    max-width: 569px;
+    border-bottom: 1px solid #BDBDBD;
 }
 .tab__contact{
     font-family: "Open Sans", sans-serif;
