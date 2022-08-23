@@ -35,7 +35,7 @@ body{
     font-family:"Open sans","Raleway",sans-serif;
 }
 header{
-    max-width: 1170px;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     flex-flow: row nowrap;
@@ -43,6 +43,7 @@ header{
     align-items: center;
     height: 75px;
     background-color: #000000;
+    padding: 0 15px; 
 }
 .logo{
     margin-left: 115.28px;
@@ -72,16 +73,20 @@ header{
 }
 .menu li {
     margin-right: 20px;}
+a{
+    color: #ffffff;
+}
 .banner{
-    max-width: 1170px;
-    height: 951px;
-    margin: 0 auto;
+    width: 100%;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
     url("../img/image_banner.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
+    padding: 0 15px; 
+    margin: 0 auto;
+    height: 1026px
 }
 .banner__logo{
     padding-left:170px;
@@ -114,9 +119,8 @@ h1{
     font-size: 18px;
     line-height: 21px;
     color: #FFFFFF;
-    height: 42px;
-    width: 270px;
     margin-top: 42px;
+    float: left;
 }
 .tab__banner{
     font-family: "Open Sans", sans-serif;
@@ -130,6 +134,7 @@ h1{
     border: 2px solid #FFFFFF;
     background-color: rgba(0, 0, 0, 0);
     cursor: pointer;
+    margin: 150px 0 0 -235px;
 }
 .tab__banner:hover {
     border: 2px solid #EC7979;;
@@ -143,6 +148,7 @@ h1{
     height: 450px;
     margin-top: 208px;
     background-color: #ffffff;
+    border-radius: 10px;
 }
 
 #username{
@@ -196,19 +202,96 @@ h1{
 .colortext{
     color:#EC7979
 }
-strong{
+p{
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
     line-height: 19px;
     display: flex;
     align-items: center;
-    color: #BDBDBD;
+    color:#FFFFFF;
     margin-left: 50px;
+}
+.social{
+    width: 100%;
+    background-color: #F8EFEF;
+}
+.social__wrapper{
+    margin: 0 auto; 
+    max-width: 1200px; 
+    padding: 0 15px; 
+    display: flex;
+}
+.social__content{
+
+}
+.social__title{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    color: #333333;
+}
+.social__text{
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    color: #86878B;
+    padding-top:18px;
+}
+
+.social__links{
+    display: flex;
+    justify-content: center;
+    padding-top: 33px;
+}
+.social__link.social__link--is-facebook{
+    background-image: url(../img/facebook_icon.png);
+    background-size: cover;
+    height: 70px;
+    width: 70px;
+}
+.social__link.social__link--is-twitter{
+    background-image: url(../img/twitter_icon.png);
+    background-size: cover;
+    height: 70px;
+    width: 70px;
+}
+.social__link.social__link--is-linkedin{
+    background-image: url(../img/linkedin_icon.png);
+    background-size: cover;
+    height: 70px;
+    width: 70px;
+}
+.social__link.social__link--is-pinterest{
+    background-image: url(../img/pinterest_icon.png);
+    background-size: cover;
+    height: 70px;
+    width: 70px;
+}
+.social__link.social__link--is-instagram{
+    background-image: url(../img/instagram_icon.png);
+    background-size: cover;
+    height: 70px;
+    width: 70px;
+}
+.social__link.social__link--is-github{
+    background-image: url(../img/github_icon.png);
+    background-size: cover;
+    height: 70px;
+    width: 70px;
+}
+.social__link.social__link--is-rss{
+    background-image: url(../img/rss_icon.png);
+    background-size: cover;
+    height: 70px;
+    width: 70px;
 }
 .tabs__wrapper {
     margin: 0 auto;
     padding: 99px 15px 0 15px;
-    max-width: 1170px;
+    max-width: 1200px; 
+    padding: 0 15px; 
+    width:100%;
 }
 .tabs__container {
     border: 1px solid #c6cbcd;
@@ -394,10 +477,15 @@ strong{
 .about__wrapper {
     text-align: center;
     margin: 0 auto;
-    max-width: 1170px;
+    max-width: 1200px; 
+    padding: 0 15px; 
+    width: 100%;
     }
 .about__separator {
-    margin: 0 auto;
+    width: 170px;
+    border: 1px solid #EC7979;
+    border-bottom: none;
+    margin: 50px auto;
         }
 h2{
     font-family: "Raleway", sans-serif;
@@ -457,12 +545,15 @@ h5{
 .pricing{
     padding: 50px 0;
     height: 900px;
-    background: #F5F5F5
+    background: #F5F5F5;
+    width: 100%;
     }
 .pricing__wrapper{
     text-align: center;
-    max-width: 1170px;
     margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 15px; 
+    
 }
 .pricing__title{
     font-family: "Raleway", sans-serif;
@@ -471,6 +562,9 @@ h5{
     color: #000000;
 }
 .pricing__separator{
+    width: 170px;
+    border: 1px solid #EC7979;
+    border-bottom: none;
     margin: 50px auto;
 }
 .pricing__subtitle{
@@ -541,11 +635,13 @@ h5{
 .reviews{
     margin-top: 50px;
     margin-bottom: 68px;
+    width: 100%;
 }
 .reviews__wrapper{
     text-align: center;
     margin: 0 auto;
-    max-width: 1170px;
+    max-width: 1200px;
+    padding: 0 15px; 
 }
 .reviews__title{
     font-family: "Raleway", sans-serif;
@@ -554,8 +650,11 @@ h5{
     color: #000000;
 }
 .reviews__separator{
-    margin: 50px auto;
+    width: 170px;
+    border: 1px solid #EC7979;
     border-bottom: none;
+    margin: 50px auto;
+
 }
 .customer{
     display: flex;
@@ -616,7 +715,7 @@ h5{
     width: 270px;
 }
 .design{
-    max-width: 1170px;
+    width: 100%;
     height: 442px;
     margin: 0 auto;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
@@ -628,6 +727,8 @@ h5{
 .design__wrapper{
     text-align: center;
     margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 15px; 
 }
 .design__title{
     font-family: "Raleway", sans-serif;
@@ -664,13 +765,16 @@ h5{
     cursor: pointer;
 }
 .contact{
-    max-width: 1170px;
+    width: 100%;
     margin: 0 auto; 
     display: flex;
     justify-content: space-between;
 }
 .contact__wrapper{
     text-align: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 15px; 
 }
 .contact__title{
     font-family: "Raleway", sans-serif;
@@ -721,6 +825,7 @@ textarea{
     width: calc(50% - 20px);
     max-width: 569px;
     border-bottom: 1px solid #BDBDBD;
+    resize: none;
 }
 .tab__contact{
     font-family: "Open Sans", sans-serif;
@@ -735,8 +840,9 @@ textarea{
     background-color: #ec7979;
 }
 footer{
-    max-width: 1170px;
     margin: 0 auto;
+    padding: 0 15px; 
+    width: 100%;
     height: 164px;
     background-color: #000000;  
 }
@@ -748,11 +854,11 @@ footer{
 .social-icons li {
     width: 53.2px;
     height: 53.2px;
-}
+} 
 .social-icons a {
     position: relative;
     display: block;
-}
+} 
 .social-icons a::before {
     content: "";
     position: absolute;
@@ -760,49 +866,50 @@ footer{
     height: 1.2rem;
     background: transparent no-repeat center center;
     background-size: 100% 100%;
-} 
+}  
 .social-icons .social-icon-fb::before {
-    background-image: url("../img/fb.png");
+    background-image: url("../img/facebook_icon.png");
     background-size: cover;
-    height: 42.11px;
-    width: 23.04px;
+    height: 53.2px;
+    width: 53.2px;
+
 }
 .social-icons .social-icon-twitter::before {
-    background-image: url("../img/twitter.png");
+    background-image: url("../img/twitter_icon.png");
     background-size: cover;
-    Width: 43.56px;
-    Height: 35.38px;
+    height: 53.2px;
+    width: 53.2px;
 }
 .social-icons .social-icon-linkedin::before {
-    background-image: url("../img/linkedin.png");
-    height: 39.89px;
-    width: 39.89px;
+    background-image: url("../img/linkedin_icon.png");
+    height: 53.2px;
+    width: 53.2px;
     background-size: cover;
     }
 .social-icons .social-icon-pinterest::before {
-    background-image: url("../img/pinterest.png");
+    background-image: url("../img/pinterest_icon.png");
     background-size: cover;
-    height: 44.33px;
-    width: 44.33px;
+    height: 53.2px;
+    width: 53.2px;
 }
 .social-icons .social-icon-instagram::before {
-    background-image: url("../img/inst.png");
+    background-image: url("../img/instagram_icon.png");
     background-size: cover;
-    height: 39.98px;
-    width: 39.91px;
+    height: 53.2px;
+    width: 53.2px;
 }
 .social-icons .social-icon-github::before {
-    background-image: url("../img/git.png");
+    background-image: url("../img/github_icon.png");
     background-size: cover;
-    height: 43.12px;
-    width: 44.21px;
+    height: 53.2px;
+    width: 53.2px;
 
 }
 .social-icons .social-icon-rss::before {
-    background-image: url("../img/rcc.png");
+    background-image: url("../img/rss_icon.png");
     background-size: cover;
-    height: 34.49px;
-    width: 34.49px;
+    height: 53.2px;
+    width: 53.2px;
 }
 .footer__title{
     font-family: "Raleway", sans-serif;
