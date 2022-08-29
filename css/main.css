@@ -284,14 +284,17 @@ p {
 
     #username {
         height: 19px;
+        width: 50%;
     }
 
     #useremail {
         height: 19px;
+        width: 50%;
     }
 
     #userpassword {
         height: 19px;
+        width: 50%;
     }
 
     .tab__form {
@@ -314,22 +317,26 @@ p {
 
     .burger__menu {
         display: block;
-        position: relative;
+        position: absolute;
         float: right;
         width: 24px;
         height: 18px;
+        right: 35px;
     }
 
     .burger__menu::before {
         content: '';
+        position: absolute;
         background-color: #ffffff;
         width: 100%;
         height: 2px;
         left: 0;
+        top: 10px;
     }
 
     .burger__menu::after {
         content: '';
+        position: absolute;
         background-color: #ffffff;
         width: 100%;
         height: 2px;
@@ -395,10 +402,12 @@ p {
         width: 60%;
         margin: 0 auto;
     }
+
     .tab__form {
         width: 100%;
         margin-top: 190px;
     }
+
     .form__title {
         font-size: 18px;
         line-height: 25px;
@@ -552,18 +561,23 @@ p {
         justify-content: center;
         flex-wrap: wrap;
     }
-    .social__content{
+
+    .social__content {
         height: 50%;
     }
+
     .social__title {
         font-size: 18px;
         line-height: 25px;
+        text-align: center;
     }
 
     .social__text {
         font-size: 14px;
         line-height: 16px;
+        text-align: center;
     }
+
     .social__link.social__link--is-facebook {
         height: 26px;
         width: 26px;
@@ -967,6 +981,7 @@ h5 {
     .about__content {
         padding-top: 50px;
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     .about__item-image {
@@ -1179,18 +1194,21 @@ h5 {
         padding-top: 49.74px;
         width: 93%;
         margin: 0 auto;
+        max-width: 288px;
     }
 
     .price2 {
         padding-top: 27px;
         width: 93%;
         margin: 0 auto;
+        max-width: 288px;
     }
 
     .price3 {
         padding-top: 27px;
         width: 93%;
         margin: 0 auto;
+        max-width: 288px;
     }
 
     .tarif__price {
@@ -1232,6 +1250,7 @@ h5 {
     justify-content: space-between;
     align-items: center;
     padding-top: 83px;
+    flex-wrap: wrap
 }
 
 .reviews__customer {
@@ -1359,15 +1378,26 @@ h5 {
         width: 134px;
     }
 
+    #customer2 {
+        display: none;
+    }
+
+    #customer3 {
+        display: none;
+    }
+
     .customer {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding-top: 83px;
+        flex-wrap: wrap;
+        max-width: 288px;
     }
 
     .reviews__customer {
         padding: 0 10px;
+        max-width: 288px;
     }
 
     .customer__comment {
@@ -1656,6 +1686,7 @@ textarea {
 @media (max-width: 786px) {
     .contact {
         margin: 0 auto;
+        padding-top: 50px;
     }
 
     .contact__wrapper {
@@ -1684,15 +1715,23 @@ textarea {
         display: block;
         width: 93%;
     }
-    textarea{
-        width: 93%;
+    .input{
+        width: 70%;
     }
+
+    textarea {
+        width: 70%;
+        padding-top: 50px;
+    }
+
     .tab__contact {
         font-size: 18px;
         line-height: 25px;
         width: 93%;
         margin: 0 auto;
         margin-bottom: 40px;
+        max-width: 288px;
+        margin-top: 50px;
     }
 }
 footer {
@@ -1846,6 +1885,7 @@ footer {
         width: 26px;
         height: 26px;
     }
+
     .footer__title {
         font-size: 14px;
         line-height: 16px;
