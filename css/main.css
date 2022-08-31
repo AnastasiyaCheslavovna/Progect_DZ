@@ -1250,7 +1250,7 @@ h5 {
     justify-content: space-between;
     align-items: center;
     padding-top: 83px;
-    flex-wrap: wrap
+    /* flex-wrap: wrap */
 }
 
 .reviews__customer {
@@ -1378,13 +1378,13 @@ h5 {
         width: 134px;
     }
 
-    #customer2 {
+     #customer2 {
         display: none;
     }
 
     #customer3 {
         display: none;
-    }
+    } 
 
     .customer {
         display: flex;
